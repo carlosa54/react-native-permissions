@@ -24,7 +24,7 @@
         case kCLAuthorizationStatusAuthorizedAlways:
             return RNPStatusAuthorized;
         case kCLAuthorizationStatusAuthorizedWhenInUse:
-            return [type isEqualToString:@"always"] ? RNPStatusDenied : RNPStatusAuthorized;
+            return [type isEqualToString:@"always"] ? RNPStatusDenied : RNPStatusWhenInUse;
         case kCLAuthorizationStatusDenied:
             return RNPStatusDenied;
         case kCLAuthorizationStatusRestricted:
